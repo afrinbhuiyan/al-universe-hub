@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universe hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="mx-32">
+  <header class="mt-16  text-center">
+    <h1 class="text-6xl font-bold mb-10">Al Universe Hub</h1>
+    <button class="btn font-bold text-white bg-[#EB5757]">Sort By Date</button>
+  </header>
+  <main class="mt-20">
+    <div id="hub-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- <div class="card bg-base-100 w-96 border">
+            <figure class="px-10 pt-10">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body ">
+              <h2 class="card-title">Features</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div> -->
+      <!-- You can open the modal using ID.showModal() method -->
+    </div>
+    <div id="show-all-container" class="hidden text-center my-8">
+      <button onclick="handleShowAll()" class="btn bg-[#EB5757] text-white text-base font-bold">See More</button>
+    </div>
+    <!-- Show Detail Modal -->
+    <!-- You can open the modal using ID.showModal() method -->
+    <dialog id="show_details_modal" class="modal">
+      <div class="modal-box w-11/12 max-w-5xl">
+        <form>
+          <button class="btn btn-sm btn-circle bg-[#EB5757] text-white absolute right-2 top-2">X</button>
+        </form>
+        <div class="flex gap-10">
+          <div class="border border-[#EB5757] rounded-lg p-10">
+            <div><h3 id="hub-description" class="text-lg font-bold">Hello!</h3></div>
+            <div class="flex justify-between mt-5">
+              <p id="hub-features" class="text-center text-[#03A30A] font-bold"></p>
+              <p id="hub-features1" class="text-center text-[#F28927] font-bold"></p>
+              <p id="hub-features2" class="text-center text-[#EB5757] font-bold"></p>
+            </div>
+            <div class="flex justify-between mt-6">
+              <h1 id="hubs" class=""></h1>
+              <h1 id="hub-Integrations" class=""></h1>
+            </div>
+          </div>
+          <div class="border p-10 rounded-lg text-center">
+            <h1 id="hub-content"></h1>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </main>
+  <script src="js/scrips.js"></script>
+</body>
+
+</html>
+
+<div>
+  <dialog id="my_modal_3" class="modal">
+    <div class="modal-box">
+      <form method="dialog">
+        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+      </form>
+      <h3 class="text-lg font-bold">Hello!</h3>
+      <p class="py-4">Press ESC key or click on ✕ button to close</p>
+    </div>
+  </dialog>
+</div>
+method="dialog"
+modal-box
